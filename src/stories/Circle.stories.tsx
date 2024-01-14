@@ -13,24 +13,25 @@ const meta: Meta<typeof Circle> = {
 
 export default meta;
 
-export const BaseCircle = {
+type Story = StoryObj<typeof meta>;
+
+export const BaseCircle: Story = {
   args: {
     variant: "orange",
   },
 };
-export const GreenCircle = {
+export const GreenCircle: Story = {
   args: {
     variant: "green",
   },
 };
-export const YellowCircle = {
+export const YellowCircle: Story = {
   args: {
     variant: "yellow",
   },
 };
 
-
-export const GroupedCircle = {
+export const GroupedCircle: Story = {
   render: () => (
     <div style={{ padding: 10 }}>
       <Circle variant="orange" />
