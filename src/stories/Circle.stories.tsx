@@ -6,9 +6,10 @@ const meta: Meta<typeof Circle> = {
   title: "Circle",
   argTypes: {
     variant: {
-      control: { type: "select" }, //デフォルトのラジオボタン→セレクトボタン
+      control: { type: "select" }, // デフォルトのラジオボタン→セレクトボタン
     },
   },
+  tags: ["autodocs"], // ドキュメントの追加
 };
 
 export default meta;
