@@ -1,4 +1,4 @@
-import { Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import Circle from "./Circle";
 
 const meta: Meta<typeof Circle> = {
@@ -27,4 +27,15 @@ export const YellowCircle = {
   args: {
     variant: "yellow",
   },
+};
+
+
+export const GroupedCircle = {
+  render: () => (
+    <div style={{ padding: 10 }}>
+      <Circle variant="orange" />
+      <Circle variant="green" />
+      <Circle variant="yellow" />
+    </div>
+  ),
 };
